@@ -2,7 +2,7 @@ import Skill from "./Skill";
 
 const Experience = ({ exp }: any) => {
   return (
-    <div className="flex w-full">
+    <div className="flex w-full xl:text-sm lg:text-xs">
       <div className="flex-auto w-1/4 opacity-50">{exp.date}</div>
       <div className="flex-auto w-3/4">
         <div className="flex flex-col gap-2">
