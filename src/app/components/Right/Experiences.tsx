@@ -11,7 +11,7 @@ const Experiences = () => {
   return (
     <ul>
       {experiences.map((experience: any, index: number) => (
-        <li key={index}>
+        <li key={index} className="mb-3">
           <Experience exp={experience} />
         </li>
       ))}

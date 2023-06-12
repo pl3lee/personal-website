@@ -6,7 +6,7 @@
       "location": "Hong Kong SAR, China",
       "date": "Jun 2023 - Present",
       "url": "https://www.hpe.com/us/en/home.html",
-      "description": "Current",
+      "description": "TBA",
       "skills": ["TBA"]
     },
     {
@@ -25,7 +25,7 @@
       "date": "Jan 2023 - Apr 2023",
       "url": "https://uwaterloo.ca/",
       "description": "Contributed to the development of a cognitive linguistic research group’s website at the University of Waterloo. I worked on both the frontend, using Next.js and TypeScript, and the backend, using a Golang REST API. I created responsive and intuitive interfaces using NextJS components and Material UI. To ensure optimal website performance and maintain high code quality, I utilized GitLab pipeline for testing and linting. I also streamlined development processes by transitioning the front-end framework from Ant Design to Material-UI. Additionally, I created a backend endpoint that dissociates an instance with a figure.",
-      "skills": ["NextJS", "TypeScript", "Golang", "Material UI", "GitLab"]
+      "skills": ["NextJS", "TypeScript", "Golang", "MaterialUI", "GitLab"]
     },
     {
       "position": "Automation Developer",
