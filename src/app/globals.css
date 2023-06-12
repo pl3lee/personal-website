@@ -13,6 +13,9 @@
   body {
     @apply bg-slate-800
   }
+  .small-section-title {
+    @apply md:hidden text-3xl sticky top-0 font-bold uppercase bg-slate-800 backdrop-blur-lg
+  }
 }
 
 .exp:hover {

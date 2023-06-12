@@ -10,6 +10,7 @@ const Experiences = () => {
 
   return (
     <div>
+      <div className="small-section-title">Experiences</div>
       <ul>
         {experiences.map((experience: any, index: number) => (
           <li key={index} className="mb-8 exp">
