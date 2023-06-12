@@ -1,0 +1,40 @@
+{
+  "experiences": [
+    {
+      "position": "Information Technology Intern",
+      "company": "Hewlett Packard Enterprise",
+      "location": "Hong Kong SAR, China",
+      "date": "Jun 2023 - Present",
+      "url": "https://www.hpe.com/us/en/home.html",
+      "description": "Current",
+      "skills": ["TBA"]
+    },
+    {
+      "position": "Computer Technician Intern",
+      "company": "Bolee Machine Tool Ltd.",
+      "location": "Hong Kong SAR, China",
+      "date": "Apr 2023 - Jun 2023",
+      "url": "https://www.bolee.hk/",
+      "description": "Efficiently managed and maintained the company’s Wordpress website by developing a Python program that uses Selenium to automate the process of creating, updating, and deleting products from a csv file, reducing 2 months of manual labor to just 4 hours. Also Managed the company’s server system, including configuring the VPN server for remote access and upgrading the storage of the NAS server.",
+      "skills": ["Python", "Selenium", "Wordpress"]
+    },
+    {
+      "position": "Full Stack Developer Intern",
+      "company": "University of Waterloo",
+      "location": "Waterloo, Ontario, Canada",
+      "date": "Jan 2023 - Apr 2023",
+      "url": "https://uwaterloo.ca/",
+      "description": "Contributed to the development of a cognitive linguistic research group’s website at the University of Waterloo. I worked on both the frontend, using Next.js and TypeScript, and the backend, using a Golang REST API. I created responsive and intuitive interfaces using NextJS components and Material UI. To ensure optimal website performance and maintain high code quality, I utilized GitLab pipeline for testing and linting. I also streamlined development processes by transitioning the front-end framework from Ant Design to Material-UI. Additionally, I created a backend endpoint that dissociates an instance with a figure.",
+      "skills": ["NextJS", "TypeScript", "Golang", "Material UI", "GitLab"]
+    },
+    {
+      "position": "Automation Developer",
+      "company": "Hanabusa Japan Real Estate",
+      "location": "Japan (Remote)",
+      "date": "Sep 2020 - Sep 2021",
+      "url": "https://hanabusa.cc/",
+      "description": "Developed a Python program that efficiently extracted residential property information and images from a Japanese real estate website using BeautifulSoup4. The program then automatically entered the data into the company’s WordPress website using Selenium, streamlining the data entry process.",
+      "skills": ["Python", "Selenium", "BeautifulSoup4", "Wordpress"]
+    }
+  ]
+}
