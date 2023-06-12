@@ -11,8 +11,10 @@ const Experiences = () => {
   return (
     <ul>
       {experiences.map((experience: any, index: number) => (
-        <li key={index} className="mb-3">
-          <Experience exp={experience} />
+        <li key={index} className="mb-8 exp">
+          <a href={experience.url} target="_blank">
+            <Experience exp={experience} />
+          </a>
         </li>
       ))}
     </ul>

@@ -4,9 +4,14 @@ const Experience = ({ exp }: any) => {
       <div className="flex-auto w-1/4 opacity-50">{exp.date}</div>
       <div className="flex-auto w-3/4">
         <div className="flex flex-col">
-          <div className="opacity-100 text-xl">{exp.position}</div>
-          <div className="opacity-100">{exp.company}</div>
-          <div className="opacity-50">{exp.location}</div>
+          <div className="flex justify-between align-middle">
+            <div className="flex flex-col">
+              <div className="opacity-100 text-xl">{exp.position}</div>
+              <div className="opacity-100">{exp.company}</div>
+            </div>
+            <div className="opacity-50 text-right">{exp.location}</div>
+          </div>
+
           <div className="opacity-50">{exp.description}</div>
           <ul className="flex items-center">
             {exp.skills.map((skill: any, index: number) => {
