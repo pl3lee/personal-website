@@ -10,6 +10,9 @@
   .exp {
     @apply p-5 rounded-3xl transition-all duration-300 ease-linear cursor-pointer
   }
+  body {
+    @apply bg-slate-800
+  }
 }
 
 .exp:hover {
