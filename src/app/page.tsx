@@ -1,8 +1,6 @@
 "use client";
-import Image from "next/image";
 import LeftPanel from "./components/Left/LeftPanel";
 import RightPanel from "./components/Right/RightPanel";
-import { useState, createContext, useEffect } from "react";
 import Radial from "./components/Radial";
 
 export default function Home() {

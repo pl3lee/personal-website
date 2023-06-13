@@ -35,11 +35,6 @@
 }
 
 *, html {
-
   scroll-behavior: smooth !important;
 }
 
-.mouse-radial {
-  /* background: radial-gradient(600px at 1425px 5px, rgba(29, 78, 216, 0.15), transparent 80%) */
-  /* background: radial-gradient(circle, pink, transparent); */
-}
