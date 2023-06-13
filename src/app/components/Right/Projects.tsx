@@ -13,11 +13,19 @@ const Projects = () => {
       <SmallSectionTitle title="Projects" />
       <ul className="pl-0">
         {projects.map((project: ProjectInterface, index: number) => (
-          <li key={index} className="mb-8 exp lg:hover-element pl-0">
-            <a href={project.url} target="_blank">
-              <Project proj={project} />
-            </a>
-          </li>
+          <div key={index}>
+            <li className="mb-8 exp lg:hidden pl-0">
+              <a href={project.url} target="_blank">
+                <Project proj={project} />
+              </a>
+            </li>
+
+            <li className="hidden mb-8 exp lg:block pl-0 hover-element">
+              <a href={project.url} target="_blank">
+                <Project proj={project} />
+              </a>
+            </li>
+          </div>
         ))}
       </ul>
     </div>

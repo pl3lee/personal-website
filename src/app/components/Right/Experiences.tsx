@@ -19,11 +19,21 @@ const Experiences = () => {
       <SmallSectionTitle title="Experiences" />
       <ul className="list-none pl-0">
         {experiences.map((experience: ExperienceInterface, index: number) => (
-          <li key={index} className="mb-8 exp pl-0 lg:hover-element">
-            <a href={experience.url} target="_blank">
-              <Experience exp={experience} />
-            </a>
-          </li>
+          <div key={index}>
+            <li key={index} className="mb-8 exp pl-0 lg:hidden">
+              <a href={experience.url} target="_blank">
+                <Experience exp={experience} />
+              </a>
+            </li>
+            <li
+              key={index}
+              className="mb-8 exp pl-0 hidden lg:block hover-element"
+            >
+              <a href={experience.url} target="_blank">
+                <Experience exp={experience} />
+              </a>
+            </li>
+          </div>
         ))}
       </ul>
       <div className="text-xl resume-link">
