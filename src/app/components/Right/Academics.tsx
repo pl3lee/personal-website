@@ -2,9 +2,19 @@
 import academicsjson from "../../academics.json";
 import { useState } from "react";
 import SmallSectionTitle from "./SmallSectionTitle";
+import {
+  AcademicsInterface,
+  AcademicInterface,
+} from "@/app/interfaces/academics";
+
+interface AcademicProps {
+  acd: AcademicInterface;
+}
 
 const Academics = () => {
-  const [academics, setAcademics] = useState<any>(academicsjson.academics);
+  const [academics, setAcademics] = useState<AcademicsInterface>(
+    academicsjson.academics
+  );
   return (
     <div className="flex flex-col w-full section" id="academics">
       <SmallSectionTitle title="Academics" />
@@ -21,7 +31,7 @@ const Academics = () => {
   );
 };
 
-const Academic = ({ acd }: any) => {
+const Academic = ({ acd }: AcademicProps) => {
   return (
     <div>
       <AcademicSmall acd={acd} />
@@ -30,7 +40,7 @@ const Academic = ({ acd }: any) => {
   );
 };
 
-const AcademicSmall = ({ acd }: any) => {
+const AcademicSmall = ({ acd }: AcademicProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="opacity-50 text-base">{acd.date}</div>
