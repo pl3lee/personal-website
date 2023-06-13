@@ -40,5 +40,6 @@
 }
 
 .mouse-radial {
-  background: radial-gradient(600px at 603px 348px, rgba(29, 78, 216, 0.15), transparent 80%);
+  /* background: radial-gradient(600px at 1425px 5px, rgba(29, 78, 216, 0.15), transparent 80%) */
+  /* background: radial-gradient(circle, pink, transparent); */
 }

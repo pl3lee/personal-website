@@ -2,11 +2,18 @@ import useMousePosition from "../hooks/useMousePosition";
 
 const Radial = () => {
   const mousePosition = useMousePosition();
-  const { x, y } = mousePosition;
+  const { pageX, pageY } = mousePosition;
   return (
     <div
-      className="hidden lg:block inset-0 z-10 transition duration-300 lg:fixed mouse-radial"
-      style={{ top: `${y}px`, left: `${x}px` }}
+      className="inset-0 transition duration-300 lg:fixed mouse-radial h-full"
+      style={{
+        top: `0`,
+        left: `0`,
+        zIndex: -1,
+        background: `radial-gradient(600px at ${pageX}px ${
+          pageY - window.scrollY
+        }px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+      }}
     ></div>
   );
 };
