@@ -1,19 +1,24 @@
 "use client";
 import experiencesjson from "../../experiences.json";
-import { useState } from "react";
 import SmallSectionTitle from "./SmallSectionTitle";
 import Skill from "./Skill";
+import {
+  ExperiencesInterface,
+  ExperienceInterface,
+} from "@/app/interfaces/experiences";
+
+interface ExperienceProps {
+  exp: ExperienceInterface;
+}
 
 const Experiences = () => {
-  const [experiences, setExperiences] = useState<any>(
-    experiencesjson.experiences
-  );
+  const { experiences } = experiencesjson;
 
   return (
     <div id="experiences" className="section">
       <SmallSectionTitle title="Experiences" />
       <ul className="list-none pl-0">
-        {experiences.map((experience: any, index: number) => (
+        {experiences.map((experience: ExperienceInterface, index: number) => (
           <li
             key={index}
             className="mb-8 exp pl-0 hover-element hover:border-red-100"
@@ -36,7 +41,7 @@ const Experiences = () => {
   );
 };
 
-const Experience = ({ exp }: any) => {
+const Experience = ({ exp }: ExperienceProps) => {
   return (
     <div>
       <ExperienceSmall exp={exp} />
@@ -45,7 +50,7 @@ const Experience = ({ exp }: any) => {
   );
 };
 
-const ExperienceSmall = ({ exp }: any) => {
+const ExperienceSmall = ({ exp }: ExperienceProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="opacity-50 text-lg">{exp.date}</div>
@@ -54,7 +59,7 @@ const ExperienceSmall = ({ exp }: any) => {
       <div className="opacity-50 text-lg">{exp.location}</div>
       <div className="opacity-50 text-sm">{exp.description}</div>
       <ul className="flex items-center flex-wrap">
-        {exp.skills.map((skill: any, index: number) => {
+        {exp.skills.map((skill: string, index: number) => {
           return (
             <li key={index}>
               <Skill text={skill} />
@@ -66,7 +71,7 @@ const ExperienceSmall = ({ exp }: any) => {
   );
 };
 
-const ExperienceLarge = ({ exp }: any) => {
+const ExperienceLarge = ({ exp }: ExperienceProps) => {
   return (
     <div className="hidden lg:flex w-full gap-3 p-3">
       <div className="w-1/4">
@@ -78,7 +83,7 @@ const ExperienceLarge = ({ exp }: any) => {
         <div className="opacity-50 text-lg">{exp.location}</div>
         <div className="opacity-50 text-sm">{exp.description}</div>
         <ul className="flex items-center flex-wrap">
-          {exp.skills.map((skill: any, index: number) => {
+          {exp.skills.map((skill: string, index: number) => {
             return (
               <li className="mt-3" key={index}>
                 <Skill text={skill} />

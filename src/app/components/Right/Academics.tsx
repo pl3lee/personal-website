@@ -1,6 +1,5 @@
 "use client";
 import academicsjson from "../../academics.json";
-import { useState } from "react";
 import SmallSectionTitle from "./SmallSectionTitle";
 import {
   AcademicsInterface,
@@ -12,14 +11,12 @@ interface AcademicProps {
 }
 
 const Academics = () => {
-  const [academics, setAcademics] = useState<AcademicsInterface>(
-    academicsjson.academics
-  );
+  const { academics } = academicsjson;
   return (
     <div className="flex flex-col w-full section" id="academics">
       <SmallSectionTitle title="Academics" />
       <ul className="pl-0">
-        {academics.map((academic: any, index: number) => (
+        {academics.map((academic: AcademicInterface, index: number) => (
           <li key={index} className="mb-8 exp hover-element pl-0">
             <a href={academic.url} target="_blank">
               <Academic acd={academic} />
@@ -62,7 +59,7 @@ const AcademicSmall = ({ acd }: AcademicProps) => {
   );
 };
 
-const AcademicLarge = ({ acd }: any) => {
+const AcademicLarge = ({ acd }: AcademicProps) => {
   return (
     <div className="hidden lg:flex w-full gap-3 p-3">
       <div className="w-1/4">

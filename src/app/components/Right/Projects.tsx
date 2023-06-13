@@ -1,15 +1,18 @@
 "use client";
 import Skill from "./Skill";
 import projectsjson from "../../projects.json";
-import { useState } from "react";
 import SmallSectionTitle from "./SmallSectionTitle";
+import { ProjectInterface, ProjectsInterface } from "@/app/interfaces/projects";
+interface ProjectProps {
+  proj: ProjectInterface;
+}
 const Projects = () => {
-  const [projects, setProjects] = useState<any>(projectsjson.projects);
+  const { projects } = projectsjson;
   return (
     <div id="projects" className="section">
       <SmallSectionTitle title="Projects" />
       <ul className="pl-0">
-        {projects.map((project: any, index: number) => (
+        {projects.map((project: ProjectInterface, index: number) => (
           <li key={index} className="mb-8 exp hover-element pl-0">
             <a href={project.url} target="_blank">
               <Project proj={project} />
@@ -21,7 +24,7 @@ const Projects = () => {
   );
 };
 
-const Project = ({ proj }: any) => {
+const Project = ({ proj }: ProjectProps) => {
   return (
     <div>
       <ProjectSmall proj={proj} />
@@ -30,13 +33,13 @@ const Project = ({ proj }: any) => {
   );
 };
 
-const ProjectSmall = ({ proj }: any) => {
+const ProjectSmall = ({ proj }: ProjectProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="text-xl font-bold">{proj.name}</div>
       <div className="opacity-50 text-sm">{proj.description}</div>
       <ul className="flex items-center flex-wrap">
-        {proj.skills.map((skill: any, index: number) => {
+        {proj.skills.map((skill: string, index: number) => {
           return (
             <li key={index}>
               <Skill text={skill} />
@@ -55,7 +58,7 @@ const ProjectSmall = ({ proj }: any) => {
   );
 };
 
-const ProjectLarge = ({ proj }: any) => {
+const ProjectLarge = ({ proj }: ProjectProps) => {
   return (
     <div className="hidden lg:flex w-full gap-3 p-3">
       <div className="w-1/4">
@@ -69,7 +72,7 @@ const ProjectLarge = ({ proj }: any) => {
         <div className="text-xl font-bold">{proj.name}</div>
         <div className="opacity-50 text-sm">{proj.description}</div>
         <ul className="flex items-center flex-wrap">
-          {proj.skills.map((skill: any, index: number) => {
+          {proj.skills.map((skill: string, index: number) => {
             return (
               <li className="mt-3" key={index}>
                 <Skill text={skill} />
