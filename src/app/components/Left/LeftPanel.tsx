@@ -3,7 +3,7 @@ import BasicInfo from "./BasicInfo";
 import ContactInfo from "./ContactInfo";
 const LeftPanel = () => {
   return (
-    <header className="flex flex-col text-left justify-between sticky w-1/2 max-h-screen top-0 pt-[6rem] pb-[6rem] mr-10">
+    <header className="flex flex-col lg:text-left lg:justify-between sticky lg:w-1/2 lg:max-h-screen lg:top-0 lg:pt-[6rem] lg:pb-[6rem] lg:mr-10 w-full gap-2">
       <BasicInfo />
       <Navbar />
       <ContactInfo />

@@ -4,30 +4,35 @@
       "name": "Biquadris",
       "url": "https://github.com/pl3lee/Biquadris",
       "description": "Developed a customizable Tetris game variant with adjustable board dimensions and win conditions. Employed the Model-View-Controller (MVC) design pattern for a robust and maintainable architecture. Utilized the Factory Method design pattern to generate unique block configurations for varying levels. Leveraged the X Window System to craft an engaging and user-friendly GUI.",
+      "img": "https://user-images.githubusercontent.com/64212628/162589021-6a25a89d-add8-4c51-baae-abdda55c52d8.png",
       "skills": ["C++", "Bash"]
     },
     {
       "name": "Recipe App",
       "url": "https://github.com/pl3lee/Recipe-App",
       "description": "Developed a recipe sharing web application using Next.js, Node.js, Express, and MongoDB, with user authentication and authorization features and the ability for users to save or unsave recipes. Designed and implemented the user interface using Material UI. Used the useContext hook to manage global states. Utilized TypeScript for improved code reliability and type safety.",
+      "img": "https://user-images.githubusercontent.com/64212628/229197185-f252dd1c-0c19-4f87-8398-57e4a276d6dc.png",
       "skills": ["MongoDB", "Mongoose", "Express.js", "Node.js", "Next.js", "TypeScript", "JavaScript"]
     },
     {
       "name": "Bolee Products Update",
       "url": "https://github.com/pl3lee/Private",
       "description": "A Python program that uses Selenium to automate the process of creating, updating, and deleting products from a csv file, reducing 2 months of manual labor to just 4 hours.",
+      "img": "https://user-images.githubusercontent.com/64212628/245342934-61a1b61b-d14a-41a9-888d-424b58109708.png",
       "skills": ["Python", "Selenium", "Wordpresss", "JSON"]
     },
     {
       "name": "Hanabusa Properties Update",
       "url": "https://github.com/pl3lee/Private",
       "description": "Developed a Python program that efficiently extracted residential property information and images from a Japanese real estate website using BeautifulSoup4. The program then automatically entered the data into the company’s WordPress website using Selenium, streamlining the data entry process.Developed a Python program that efficiently extracted residential property information and images from a Japanese real estate website using BeautifulSoup4. The program then automatically entered the data into the company’s WordPress website using Selenium, streamlining the data entry process.",
+      "img": "https://user-images.githubusercontent.com/64212628/245342934-61a1b61b-d14a-41a9-888d-424b58109708.png",
       "skills": ["Python", "Selenium", "Wordpress", "BeautifulSoup"]
     },
     {
       "name": "Run Test Suite",
       "url": "https://github.com/pl3lee/Private",
       "description": "Created a Bash script that checks if a given program matches the output of the given test suite.",
+      "img": "https://github-production-user-asset-6210df.s3.amazonaws.com/64212628/245342720-1d842d87-848c-48ce-9d89-3a60a410f840.jpg",
       "skills": ["Bash"]
     }
   ]

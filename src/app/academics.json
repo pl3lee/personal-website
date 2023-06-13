@@ -1,0 +1,16 @@
+{
+  "academics": [
+    {
+      "name": "University of Waterloo",
+      "description": "Honours Bachelor of Mathematics - Fourth Year",
+      "location": "Ontario, Canada",
+      "date": "Sep 2020 - Aug 2024",
+      "major": "Computational Mathematics and Combinatorics & Optimization",
+      "minor": "Computer Science",
+      "cgpa": "89.83/100",
+      "mav": "88.10/100",
+      "url": "https://uwaterloo.ca/",
+      "img": "https://user-images.githubusercontent.com/64212628/245346483-e3a2287d-50de-45f2-8261-058488ca99ef.png"
+    }
+  ]
+}

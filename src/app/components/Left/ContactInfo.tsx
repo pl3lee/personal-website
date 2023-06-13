@@ -2,7 +2,7 @@ const ContactInfo = () => {
   return (
     <ul className="ml-1 mt-8 flex items-center">
       <li className="mr-5 text-lg">
-        <a href="https://github.com/pl3lee">
+        <a href="https://github.com/pl3lee" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -17,7 +17,10 @@ const ContactInfo = () => {
         </a>
       </li>
       <li className="mr-5 text-lg">
-        <a href="https://www.linkedin.com/in/billy-lee-9892a3200/">
+        <a
+          href="https://www.linkedin.com/in/billy-lee-9892a3200/"
+          target="_blank"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -32,7 +35,7 @@ const ContactInfo = () => {
         </a>
       </li>
       <li className="mr-5 text-lg">
-        <a href="mailto:billy.pl.lee@gmail.com">
+        <a href="mailto:billy.pl.lee@gmail.com" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
