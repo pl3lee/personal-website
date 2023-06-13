@@ -10,7 +10,10 @@ const Navbar = () => {
       const sections: HTMLElement[] = Array.from(
         document.querySelectorAll(".section")
       );
-      const scrollPosition = window.scrollY;
+      let scrollPosition = 0;
+      if (typeof window !== "undefined") {
+        scrollPosition = window.scrollY;
+      }
       if (
         scrollPosition <
         sections[0].offsetTop + sections[0].scrollHeight * 0.6
@@ -33,11 +36,14 @@ const Navbar = () => {
         setActiveSection("academics");
       }
     };
-
-    window.addEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
   return (
