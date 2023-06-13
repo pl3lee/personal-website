@@ -7,7 +7,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll(".section");
+      const sections: HTMLElement[] = Array.from(
+        document.querySelectorAll(".section")
+      );
       const scrollPosition = window.scrollY;
       if (
         scrollPosition <
