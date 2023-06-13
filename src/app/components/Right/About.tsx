@@ -1,7 +1,9 @@
+import SmallSectionTitle from "./SmallSectionTitle";
+
 const About = () => {
   return (
     <div className="flex flex-col gap-12">
-      <div className="small-section-title">About</div>
+      <SmallSectionTitle title="About" />
       <div className="opacity-50">
         Hi there! I’m a fourth-year Honours Bachelor of Mathematics student at
         the University of Waterloo, with a double major in Computational

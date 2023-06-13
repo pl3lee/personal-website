@@ -2,6 +2,7 @@
 import Experience from "./Experience";
 import experiencesjson from "../../experiences.json";
 import { useState } from "react";
+import SmallSectionTitle from "./SmallSectionTitle";
 
 const Experiences = () => {
   const [experiences, setExperiences] = useState<any>(
@@ -10,10 +11,13 @@ const Experiences = () => {
 
   return (
     <div>
-      <div className="small-section-title">Experiences</div>
-      <ul>
+      <SmallSectionTitle title="Experiences" />
+      <ul className="list-none pl-0">
         {experiences.map((experience: any, index: number) => (
-          <li key={index} className="mb-8 exp">
+          <li
+            key={index}
+            className="mb-8 exp pl-0 hover-element hover:border-red-100"
+          >
             <a href={experience.url} target="_blank">
               <Experience exp={experience} />
             </a>
