@@ -3,6 +3,7 @@ import Image from "next/image";
 import LeftPanel from "./components/Left/LeftPanel";
 import RightPanel from "./components/Right/RightPanel";
 import { useState, createContext, useEffect } from "react";
+import Radial from "./components/Radial";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <LeftPanel />
         <RightPanel />
       </main>
+      <Radial />
     </div>
   );
 }

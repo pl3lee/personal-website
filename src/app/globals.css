@@ -38,3 +38,7 @@
 
   scroll-behavior: smooth !important;
 }
+
+.mouse-radial {
+  background: radial-gradient(600px at 603px 348px, rgba(29, 78, 216, 0.15), transparent 80%);
+}
