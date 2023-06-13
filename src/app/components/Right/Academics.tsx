@@ -6,7 +6,7 @@ import SmallSectionTitle from "./SmallSectionTitle";
 const Academics = () => {
   const [academics, setAcademics] = useState<any>(academicsjson.academics);
   return (
-    <div className="flex flex-col w-full" id="academics">
+    <div className="flex flex-col w-full section" id="academics">
       <SmallSectionTitle title="Academics" />
       <ul className="pl-0">
         {academics.map((academic: any, index: number) => (

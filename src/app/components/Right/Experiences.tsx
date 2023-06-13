@@ -10,7 +10,7 @@ const Experiences = () => {
   );
 
   return (
-    <div id="experiences">
+    <div id="experiences" className="section">
       <SmallSectionTitle title="Experiences" />
       <ul className="list-none pl-0">
         {experiences.map((experience: any, index: number) => (

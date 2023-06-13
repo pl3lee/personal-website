@@ -1,6 +1,6 @@
 const BasicInfo = () => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 lg:mb-20">
       <div className="text-6xl lg:text-7xl">Billy Lee</div>
       <div className="text-sm lg:text-2xl whitespace-pre-line">
         4th Year Mathematics Student at the University of Waterloo

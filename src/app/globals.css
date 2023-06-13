@@ -11,13 +11,19 @@
     @apply p-5 rounded-3xl transition-all duration-300 ease-linear cursor-pointer
   }
   body {
-    @apply bg-slate-800
+    @apply bg-slate-900
   }
   .small-section-title-container {
-    @apply lg:hidden sticky top-0 -mx-6 mb-4 w-screen bg-slate-800/75 px-6 py-5 backdrop-blur z-20
+    @apply lg:hidden sticky top-0 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur z-20
   }
   .small-section-title {
     @apply  text-3xl  font-bold uppercase  
+  }
+  .nav-link {
+    @apply text-white text-xl transition-all duration-100 ease-linear hover:text-2xl
+  }
+  .active-section {
+    @apply text-3xl
   }
 }
 .small-section-title-container {
