@@ -2,7 +2,7 @@ import SmallSectionTitle from "./SmallSectionTitle";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-12" id="about">
       <SmallSectionTitle title="About" />
       <div className="opacity-50">
         Hi there! I’m a fourth-year Honours Bachelor of Mathematics student at

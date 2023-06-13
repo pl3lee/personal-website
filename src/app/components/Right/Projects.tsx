@@ -6,7 +6,7 @@ import SmallSectionTitle from "./SmallSectionTitle";
 const Projects = () => {
   const [projects, setProjects] = useState<any>(projectsjson.projects);
   return (
-    <div>
+    <div id="projects">
       <SmallSectionTitle title="Projects" />
       <ul className="pl-0">
         {projects.map((project: any, index: number) => (
