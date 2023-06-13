@@ -24,7 +24,7 @@
     {
       "name": "Hanabusa Properties Update",
       "url": "https://github.com/pl3lee/Private",
-      "description": "Developed a Python program that efficiently extracted residential property information and images from a Japanese real estate website using BeautifulSoup4. The program then automatically entered the data into the company’s WordPress website using Selenium, streamlining the data entry process.Developed a Python program that efficiently extracted residential property information and images from a Japanese real estate website using BeautifulSoup4. The program then automatically entered the data into the company’s WordPress website using Selenium, streamlining the data entry process.",
+      "description": "Developed a Python program that efficiently extracted residential property information and images from a Japanese real estate website using BeautifulSoup4. The program then automatically entered the data into the company’s WordPress website using Selenium, streamlining the data entry process.",
       "img": "https://user-images.githubusercontent.com/64212628/245342934-61a1b61b-d14a-41a9-888d-424b58109708.png",
       "skills": ["Python", "Selenium", "Wordpress", "BeautifulSoup"]
     },

@@ -13,7 +13,7 @@ const Projects = () => {
       <SmallSectionTitle title="Projects" />
       <ul className="pl-0">
         {projects.map((project: ProjectInterface, index: number) => (
-          <li key={index} className="mb-8 exp hover-element pl-0">
+          <li key={index} className="mb-8 exp lg:hover-element pl-0">
             <a href={project.url} target="_blank">
               <Project proj={project} />
             </a>

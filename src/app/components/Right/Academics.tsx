@@ -17,7 +17,7 @@ const Academics = () => {
       <SmallSectionTitle title="Academics" />
       <ul className="pl-0">
         {academics.map((academic: AcademicInterface, index: number) => (
-          <li key={index} className="mb-8 exp hover-element pl-0">
+          <li key={index} className="mb-8 exp lg:hover-element pl-0">
             <a href={academic.url} target="_blank">
               <Academic acd={academic} />
             </a>
