@@ -15,9 +15,7 @@ const Projects = () => {
         {projects.map((project: ProjectInterface, index: number) => (
           <div key={index}>
             <li className="mb-8 exp lg:hidden pl-0">
-              <a href={project.url} target="_blank">
-                <Project proj={project} />
-              </a>
+              <Project proj={project} />
             </li>
 
             <li className="hidden mb-8 exp lg:block pl-0 hover-element">
@@ -44,7 +42,9 @@ const Project = ({ proj }: ProjectProps) => {
 const ProjectSmall = ({ proj }: ProjectProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
-      <div className="text-xl font-bold">{proj.name}</div>
+      <a href={proj.url} target="_blank">
+        <div className="text-xl font-bold">{proj.name}</div>
+      </a>
       <div className="opacity-50 text-sm">{proj.description}</div>
       <ul className="flex items-center flex-wrap">
         {proj.skills.map((skill: string, index: number) => {

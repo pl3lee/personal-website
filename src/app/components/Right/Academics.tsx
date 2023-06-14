@@ -19,9 +19,7 @@ const Academics = () => {
         {academics.map((academic: AcademicInterface, index: number) => (
           <div key={index}>
             <li className="mb-8 exp pl-0 lg:hidden">
-              <a href={academic.url} target="_blank">
-                <Academic acd={academic} />
-              </a>
+              <Academic acd={academic} />
             </li>
             <li className="hidden lg:block mb-8 exp hover-element pl-0">
               <a href={academic.url} target="_blank">
@@ -48,7 +46,9 @@ const AcademicSmall = ({ acd }: AcademicProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="opacity-50 text-base">{acd.date}</div>
-      <div className="text-xl font-bold">{acd.name}</div>
+      <a href={acd.url} target="_blank">
+        <div className="text-xl font-bold">{acd.name}</div>
+      </a>
       <div className="opacity-50 text-base">{acd.description}</div>
       <div className="opacity-50 text-base">{acd.location}</div>
       <div className="opacity-50 text-base">Major: {acd.major}</div>

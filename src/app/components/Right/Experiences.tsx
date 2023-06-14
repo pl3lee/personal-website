@@ -21,9 +21,7 @@ const Experiences = () => {
         {experiences.map((experience: ExperienceInterface, index: number) => (
           <div key={index}>
             <li key={index} className="mb-8 exp pl-0 lg:hidden">
-              <a href={experience.url} target="_blank">
-                <Experience exp={experience} />
-              </a>
+              <Experience exp={experience} />
             </li>
             <li
               key={index}
@@ -61,7 +59,10 @@ const ExperienceSmall = ({ exp }: ExperienceProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="opacity-50 text-lg">{exp.date}</div>
-      <div className="text-xl font-bold">{exp.position}</div>
+      <a href={exp.url} target="_blank">
+        <div className="text-xl font-bold">{exp.position}</div>
+      </a>
+
       <div className="opacity-50 text-lg">{exp.company}</div>
       <div className="opacity-50 text-lg">{exp.location}</div>
       <div className="opacity-50 text-sm">{exp.description}</div>
