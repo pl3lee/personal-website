@@ -9,6 +9,7 @@ This is the source code for my personal website, where I showcase some of my pro
 - [Next.js](https://nextjs.org/) - A React framework for building fast and scalable web applications.
 - [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
 - [Vercel](https://vercel.com/) - A platform for deploying and hosting static and serverless websites.
+- [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds type safety and readability to your code.
 
 ## How to Run Locally
 
