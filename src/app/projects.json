@@ -1,19 +1,27 @@
 {
   "projects": [
     {
+      "name": "Recipe App",
+      "url": "https://github.com/pl3lee/Recipe-App",
+      "description": "Developed a recipe sharing web application using Next.js, Node.js, Express, and MongoDB, with user authentication and authorization features and the ability for users to save or unsave recipes. Designed and implemented the user interface using Material UI. Used the useContext hook to manage global states. Utilized TypeScript for improved code reliability and type safety.",
+      "img": "https://user-images.githubusercontent.com/64212628/229197185-f252dd1c-0c19-4f87-8398-57e4a276d6dc.png",
+      "skills": ["Next.js", "MongoDB", "Mongoose", "Express.js", "Node.js", "TypeScript", "JavaScript"]
+    },
+    {
+      "name": "Personal Website",
+      "url": "https://github.com/pl3lee/personal-website",
+      "description": "Developed a personal website using Next.js and TypeScript for enhanced performance and reliability. Designed an intuitive and visually appealing user interface using TailwindCSS. Leveraged the benefits of TypeScript for improved code reliability and type safety.",
+      "img": "https://user-images.githubusercontent.com/64212628/245751150-b0b83332-2e50-4a3c-b66d-5601559a1949.png",
+      "skills": ["Next.js", "TypeScript", "TailwindCSS"]
+    },
+    {
       "name": "Biquadris",
       "url": "https://github.com/pl3lee/Biquadris",
       "description": "Developed a customizable Tetris game variant with adjustable board dimensions and win conditions. Employed the Model-View-Controller (MVC) design pattern for a robust and maintainable architecture. Utilized the Factory Method design pattern to generate unique block configurations for varying levels. Leveraged the X Window System to craft an engaging and user-friendly GUI.",
       "img": "https://user-images.githubusercontent.com/64212628/162589021-6a25a89d-add8-4c51-baae-abdda55c52d8.png",
       "skills": ["C++", "Bash"]
     },
-    {
-      "name": "Recipe App",
-      "url": "https://github.com/pl3lee/Recipe-App",
-      "description": "Developed a recipe sharing web application using Next.js, Node.js, Express, and MongoDB, with user authentication and authorization features and the ability for users to save or unsave recipes. Designed and implemented the user interface using Material UI. Used the useContext hook to manage global states. Utilized TypeScript for improved code reliability and type safety.",
-      "img": "https://user-images.githubusercontent.com/64212628/229197185-f252dd1c-0c19-4f87-8398-57e4a276d6dc.png",
-      "skills": ["MongoDB", "Mongoose", "Express.js", "Node.js", "Next.js", "TypeScript", "JavaScript"]
-    },
+    
     {
       "name": "Bolee Products Update",
       "url": "https://github.com/pl3lee/Private",
