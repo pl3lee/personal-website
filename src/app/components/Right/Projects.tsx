@@ -13,11 +13,13 @@ const Projects = () => {
       <ul className="pl-0">
         {projects.map((project: ProjectInterface, index: number) => (
           <div key={index}>
-            <li className="mb-8 exp lg:hidden pl-0">
-              <Project proj={project} />
+            <li className="mb-20 exp lg:hidden pl-0">
+              <a href={project.url} target="_blank">
+                <Project proj={project} />
+              </a>
             </li>
 
-            <li className="hidden mb-8 exp lg:block pl-0 hover-element">
+            <li className="hidden mb-20 exp lg:block pl-0 hover-element">
               <a href={project.url} target="_blank">
                 <Project proj={project} />
               </a>

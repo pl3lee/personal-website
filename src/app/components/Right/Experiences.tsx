@@ -23,7 +23,9 @@ const Experiences = () => {
           {experiences.map((experience: ExperienceInterface, index: number) => (
             <div key={experience.company}>
               <li className="mb-8 exp pl-0 lg:hidden">
-                <Experience exp={experience} />
+                <a href={experience.url} target="_blank">
+                  <Experience exp={experience} />
+                </a>
               </li>
               <li className="mb-8 exp pl-0 hidden lg:block hover-element">
                 <a href={experience.url} target="_blank">
