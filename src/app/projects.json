@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "name": "Instagram Clone",
+      "url": "https://github.com/pl3lee/instagram-clone",
+      "description": "Built an Instagram clone project using Next.js, Express, Firebase Auth, MongoDB, Socket.io, and Node.js, replicating the core functionality of the official Instagram application. Implemented user registration and authentication features with Firebase Auth. Developed user profiles that display user-specific information such as posts, followers, and following count. Created a post creation feature that enables users to upload images with captions. Implemented a chat function using Socket.io, allowing users to have real-time conversations with other users. Integrated MongoDB for data storage and utilized Node.js for efficient server-side operations. Ensured responsive design using Tailwind CSS, providing an optimal viewing experience across different devices.",
+      "img": "https://user-images.githubusercontent.com/64212628/253189872-d1976ffe-78a4-4202-91fc-b235cd5e8187.png",
+      "skills": ["Next.js", "MongoDB", "Mongoose", "Socket.io", "Firebase Auth", "Express.js", "Node.js", "TypeScript", "JavaScript"]
+    },
+    {
       "name": "Recipe App",
       "url": "https://github.com/pl3lee/Recipe-App",
       "description": "Developed a recipe sharing web application using Next.js, Node.js, Express, and MongoDB, with user authentication and authorization features and the ability for users to save or unsave recipes. Designed and implemented the user interface using Material UI. Used the useContext hook to manage global states. Utilized TypeScript for improved code reliability and type safety.",
