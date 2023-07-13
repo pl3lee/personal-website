@@ -55,7 +55,7 @@ const Navbar = () => {
           "nav-link" + (activeSection === "about" ? " active-section" : "")
         }
       >
-        About
+        <h1>About</h1>
       </Link>
       <Link
         href="#experiences"
@@ -65,7 +65,7 @@ const Navbar = () => {
           (activeSection === "experiences" ? " active-section" : "")
         }
       >
-        Experiences
+        <h1>Experiences</h1>
       </Link>
       <Link
         href="#projects"
@@ -74,7 +74,7 @@ const Navbar = () => {
           "nav-link" + (activeSection === "projects" ? " active-section" : "")
         }
       >
-        Projects
+        <h1>Projects</h1>
       </Link>
       <Link
         href="#academics"
@@ -83,7 +83,7 @@ const Navbar = () => {
           "nav-link" + (activeSection === "academics" ? " active-section" : "")
         }
       >
-        Academics
+        <h1>Academics</h1>
       </Link>
     </div>
   );

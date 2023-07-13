@@ -4,7 +4,7 @@ interface SmallSectionTitleProps {
 const SmallSectionTitle = ({ title }: SmallSectionTitleProps) => {
   return (
     <div className="small-section-title-container">
-      <div className="small-section-title">{title}</div>
+      <h1 className="small-section-title">{title}</h1>
     </div>
   );
 };
