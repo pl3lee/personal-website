@@ -1,4 +1,3 @@
-"use client";
 import Skill from "./Skill";
 import projectsjson from "../../projects.json";
 import SmallSectionTitle from "./SmallSectionTitle";
@@ -42,9 +41,7 @@ const Project = ({ proj }: ProjectProps) => {
 const ProjectSmall = ({ proj }: ProjectProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
-      <a href={proj.url} target="_blank">
-        <div className="text-xl font-bold">{proj.name}</div>
-      </a>
+      <div className="text-xl font-bold">{proj.name}</div>
       <div className="opacity-50 text-sm">{proj.description}</div>
       <ul className="flex items-center flex-wrap">
         {proj.skills.map((skill: string, index: number) => {

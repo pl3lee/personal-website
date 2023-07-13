@@ -1,4 +1,3 @@
-"use client";
 import LeftPanel from "./components/Left/LeftPanel";
 import RightPanel from "./components/Right/RightPanel";
 import Radial from "./components/Radial";

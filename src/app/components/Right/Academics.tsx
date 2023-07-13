@@ -1,4 +1,3 @@
-"use client";
 import academicsjson from "../../academics.json";
 import SmallSectionTitle from "./SmallSectionTitle";
 import {
@@ -46,9 +45,7 @@ const AcademicSmall = ({ acd }: AcademicProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="opacity-50 text-base">{acd.date}</div>
-      <a href={acd.url} target="_blank">
-        <div className="text-xl font-bold">{acd.name}</div>
-      </a>
+      <div className="text-xl font-bold">{acd.name}</div>
       <div className="opacity-50 text-base">{acd.description}</div>
       <div className="opacity-50 text-base">{acd.location}</div>
       <div className="opacity-50 text-base">Major: {acd.major}</div>
