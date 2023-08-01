@@ -5,7 +5,8 @@ export interface ProjectsInterface {
 
 export interface ProjectInterface {
   name: string;
-  url: string;
+  demoUrl: string;
+  codeUrl: string;
   description: string;
   img: string;
   skills: string[];
