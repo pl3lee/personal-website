@@ -43,7 +43,7 @@ const ProjectSmall = ({ proj }: ProjectProps) => {
         <img
           src={proj.img}
           alt={proj.name}
-          className="object-cover w-auto max-h-[300px]"
+          className="object-cover w-auto max-h-[500px]"
         />
       ) : null}
       <div className="text-xl font-bold">{proj.name}</div>
