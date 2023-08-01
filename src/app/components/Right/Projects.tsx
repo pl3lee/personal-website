@@ -1,12 +1,11 @@
 import Skill from "./Skill";
-import projectsjson from "../../projects.json";
 import SmallSectionTitle from "./SmallSectionTitle";
-import { ProjectInterface, ProjectsInterface } from "@/app/interfaces/projects";
+import { ProjectInterface } from "@/app/interfaces/projects";
 interface ProjectProps {
   proj: ProjectInterface;
 }
-const Projects = () => {
-  const { projects } = projectsjson;
+
+const Projects = ({ projects }: { projects: ProjectInterface[] }) => {
   return (
     <div id="projects" className="section">
       <SmallSectionTitle title="Projects" />

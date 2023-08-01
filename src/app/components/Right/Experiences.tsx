@@ -1,18 +1,16 @@
-import experiencesjson from "../../experiences.json";
 import SmallSectionTitle from "./SmallSectionTitle";
 import Skill from "./Skill";
-import {
-  ExperiencesInterface,
-  ExperienceInterface,
-} from "@/app/interfaces/experiences";
+import { ExperienceInterface } from "@/app/interfaces/experiences";
 
 interface ExperienceProps {
   exp: ExperienceInterface;
 }
 
-const Experiences = () => {
-  const { experiences } = experiencesjson;
-
+const Experiences = ({
+  experiences,
+}: {
+  experiences: ExperienceInterface[];
+}) => {
   if (!experiences) {
     return <div></div>;
   } else {

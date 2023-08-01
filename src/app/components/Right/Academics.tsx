@@ -1,16 +1,11 @@
-import academicsjson from "../../academics.json";
 import SmallSectionTitle from "./SmallSectionTitle";
-import {
-  AcademicsInterface,
-  AcademicInterface,
-} from "@/app/interfaces/academics";
+import { AcademicInterface } from "@/app/interfaces/academics";
 
 interface AcademicProps {
   acd: AcademicInterface;
 }
 
-const Academics = () => {
-  const { academics } = academicsjson;
+const Academics = ({ academics }: { academics: AcademicInterface[] }) => {
   return (
     <div className="flex flex-col w-full section" id="academics">
       <SmallSectionTitle title="Academics" />
