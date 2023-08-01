@@ -8,7 +8,7 @@
 
 @layer components {
   .hover-element {
-    @apply p-5 rounded-3xl transition-all duration-300 ease-linear cursor-pointer
+    @apply p-5 rounded-3xl transition-all duration-300 ease-linear
   }
   body {
     @apply bg-slate-900
