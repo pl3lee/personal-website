@@ -35,10 +35,7 @@ const Experiences = ({
           ))}
         </ul>
         <div className="text-xl resume-link">
-          <a
-            href="https://raw.githubusercontent.com/pl3lee/Resume/375de0eb756b84210ed20a320c4cc053a090a12c/resume.pdf"
-            target="_blank"
-          >
+          <a href="/resume.pdf" target="_blank">
             View my Résumé
           </a>
         </div>
