@@ -2,6 +2,7 @@ import Image from "next/image";
 import Skill from "./Skill";
 import SmallSectionTitle from "./SmallSectionTitle";
 import { ProjectInterface } from "@/app/interfaces/projects";
+import PillLink from "../PillLink";
 interface ProjectProps {
   proj: ProjectInterface;
 }
@@ -49,22 +50,24 @@ const ProjectSmall = ({ proj }: ProjectProps) => {
       <div className="text-xl font-bold">{proj.name}</div>
       <div className="flex gap-3">
         {proj.demoUrl != "" ? (
-          <a
-            className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
-            href={proj.demoUrl}
-            target="_blank"
-          >
-            Demo
-          </a>
+          // <a
+          //   className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
+          //   href={proj.demoUrl}
+          //   target="_blank"
+          // >
+          //   Demo
+          // </a>
+          <PillLink text="Demo" link={proj.demoUrl} />
         ) : null}
         {proj.codeUrl != "" ? (
-          <a
-            className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
-            href={proj.codeUrl}
-            target="_blank"
-          >
-            Code
-          </a>
+          // <a
+          //   className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
+          //   href={proj.codeUrl}
+          //   target="_blank"
+          // >
+          //   Code
+          // </a>
+          <PillLink text="Code" link={proj.codeUrl} />
         ) : null}
       </div>
       <div className="opacity-50 text-sm">{proj.description}</div>
@@ -96,22 +99,24 @@ const ProjectLarge = ({ proj }: ProjectProps) => {
           <span className="text-xl font-bold">{proj.name} </span>
           <div className="flex gap-3">
             {proj.demoUrl != "" ? (
-              <a
-                className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
-                href={proj.demoUrl}
-                target="_blank"
-              >
-                Demo
-              </a>
+              // <a
+              //   className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
+              //   href={proj.demoUrl}
+              //   target="_blank"
+              // >
+              //   Demo
+              // </a>
+              <PillLink text="Demo" link={proj.demoUrl} />
             ) : null}
             {proj.codeUrl != "" ? (
-              <a
-                className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
-                href={proj.codeUrl}
-                target="_blank"
-              >
-                Code
-              </a>
+              // <a
+              //   className="text-white bg-teal-500 rounded-full px-6 py-2 font-medium leading-5 text-center mb-5 lg:mb-0 hover:bg-teal-600 focus:outline-none focus:bg-teal-600 transition duration-150 ease-in-out"
+              //   href={proj.codeUrl}
+              //   target="_blank"
+              // >
+              //   Code
+              // </a>
+              <PillLink text="Code" link={proj.codeUrl} />
             ) : null}
           </div>
         </div>
