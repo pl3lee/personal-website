@@ -2,10 +2,10 @@ import SmallSectionTitle from "./SmallSectionTitle";
 import { ProjectInterface } from "@/app/interfaces/projects";
 import Project from "../Project";
 
-const Projects = ({ projects }: { projects: ProjectInterface[] }) => {
+const FreelanceProjects = ({ projects }: { projects: ProjectInterface[] }) => {
   return (
-    <div id="projects" className="section">
-      <SmallSectionTitle title="Projects" />
+    <div id="freelance-projects" className="section">
+      <SmallSectionTitle title="Freelance Projects" />
       <ul className="pl-0">
         {projects.map((project: ProjectInterface, index: number) => (
           <div key={index}>
@@ -19,4 +19,4 @@ const Projects = ({ projects }: { projects: ProjectInterface[] }) => {
   );
 };
 
-export default Projects;
+export default FreelanceProjects;

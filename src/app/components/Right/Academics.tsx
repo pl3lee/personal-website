@@ -12,12 +12,7 @@ const Academics = ({ academics }: { academics: AcademicInterface[] }) => {
       <ul className="pl-0">
         {academics.map((academic: AcademicInterface, index: number) => (
           <div key={index}>
-            <li className="mb-8 exp pl-0 lg:hidden">
-              <a href={academic.url} target="_blank">
-                <Academic acd={academic} />
-              </a>
-            </li>
-            <li className="hidden lg:block mb-8 exp hover-element pl-0">
+            <li>
               <a href={academic.url} target="_blank">
                 <Academic acd={academic} />
               </a>
@@ -31,7 +26,7 @@ const Academics = ({ academics }: { academics: AcademicInterface[] }) => {
 
 const Academic = ({ acd }: AcademicProps) => {
   return (
-    <div>
+    <div className="mb-8 exp pl-0">
       <AcademicSmall acd={acd} />
       <AcademicLarge acd={acd} />
     </div>
@@ -62,7 +57,7 @@ const AcademicSmall = ({ acd }: AcademicProps) => {
 
 const AcademicLarge = ({ acd }: AcademicProps) => {
   return (
-    <div className="hidden lg:flex w-full gap-3 p-3">
+    <div className="hidden lg:flex w-full gap-3 p-3 hover-element">
       <div className="w-1/4">
         {acd.img ? (
           <img

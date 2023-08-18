@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { FiArrowRight } from "react-icons/fi";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -28,10 +29,15 @@ const Navbar = () => {
         scrollPosition <
         sections[2].offsetTop + sections[2].scrollHeight * 0.6
       ) {
-        setActiveSection("projects");
+        setActiveSection("freelance-projects");
       } else if (
         scrollPosition <
         sections[3].offsetTop + sections[3].scrollHeight * 0.6
+      ) {
+        setActiveSection("projects");
+      } else if (
+        scrollPosition <
+        sections[4].offsetTop + sections[4].scrollHeight * 0.6
       ) {
         setActiveSection("academics");
       }
@@ -47,17 +53,27 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <div className="lg:flex flex-col gap-3 hidden lg:mb-20">
-      <Link
+    <nav className="lg:flex flex-col gap-3 hidden lg:mb-20">
+      {/* <Link
         href="#about"
         scroll={false}
         className={
           "nav-link" + (activeSection === "about" ? " active-section" : "")
         }
       >
-        <h1>About</h1>
-      </Link>
-      <Link
+        <h1 className="flex flex-row gap-2 items-center">
+          About
+          <FiArrowRight
+            className={`${activeSection === "about" ? "" : "hidden"}`}
+          />
+        </h1>
+      </Link> */}
+      <NavLink
+        sectionTitle="About"
+        sectionClassName="about"
+        activeSection={activeSection}
+      />
+      {/* <Link
         href="#experiences"
         scroll={false}
         className={
@@ -66,8 +82,28 @@ const Navbar = () => {
         }
       >
         <h1>Experiences</h1>
-      </Link>
-      <Link
+      </Link> */}
+      <NavLink
+        sectionTitle="Experiences"
+        sectionClassName="experiences"
+        activeSection={activeSection}
+      />
+      {/* <Link
+        href="#freelance-projects"
+        scroll={false}
+        className={
+          "nav-link" +
+          (activeSection === "freelance-projects" ? " active-section" : "")
+        }
+      >
+        <h1>Freelance Projects</h1>
+      </Link> */}
+      <NavLink
+        sectionTitle="Freelance Projects"
+        sectionClassName="freelance-projects"
+        activeSection={activeSection}
+      />
+      {/* <Link
         href="#projects"
         scroll={false}
         className={
@@ -75,8 +111,13 @@ const Navbar = () => {
         }
       >
         <h1>Projects</h1>
-      </Link>
-      <Link
+      </Link> */}
+      <NavLink
+        sectionTitle="Projects"
+        sectionClassName="projects"
+        activeSection={activeSection}
+      />
+      {/* <Link
         href="#academics"
         scroll={false}
         className={
@@ -84,8 +125,41 @@ const Navbar = () => {
         }
       >
         <h1>Academics</h1>
-      </Link>
-    </div>
+      </Link> */}
+      <NavLink
+        sectionTitle="Academics"
+        sectionClassName="academics"
+        activeSection={activeSection}
+      />
+    </nav>
+  );
+};
+
+const NavLink = ({
+  sectionTitle,
+  sectionClassName,
+  activeSection,
+}: {
+  sectionTitle: string;
+  sectionClassName: string;
+  activeSection: string;
+}) => {
+  return (
+    <Link
+      href={`#${sectionClassName}`}
+      scroll={false}
+      className={
+        "nav-link" +
+        (activeSection === sectionClassName ? " active-section" : "")
+      }
+    >
+      <h1 className="flex flex-row gap-2 items-center">
+        {sectionTitle}
+        <FiArrowRight
+          className={`${activeSection === sectionClassName ? "" : "hidden"}`}
+        />
+      </h1>
+    </Link>
   );
 };
 

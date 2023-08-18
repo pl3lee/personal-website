@@ -20,10 +20,10 @@
     @apply  text-3xl  font-bold uppercase  
   }
   .nav-link {
-    @apply text-white text-xl transition-all duration-100 ease-linear
+    @apply text-white text-xl transition-all duration-200 ease-linear
   }
   .active-section {
-    @apply text-3xl underline
+    @apply text-3xl
   }
 }
 .small-section-title-container {

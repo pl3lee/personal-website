@@ -20,15 +20,16 @@ const Experiences = ({
         <ul className="list-none pl-0">
           {experiences.map((experience: ExperienceInterface, index: number) => (
             <div key={experience.company}>
-              <li className="mb-8 exp pl-0 lg:hidden">
-                <a href={experience.url} target="_blank">
-                  <Experience exp={experience} />
-                </a>
-              </li>
-              <li className="mb-8 exp pl-0 hidden lg:block hover-element">
-                <a href={experience.url} target="_blank">
-                  <Experience exp={experience} />
-                </a>
+              <li className="">
+                {experience.samePage ? (
+                  <a href={experience.url}>
+                    <Experience exp={experience} />
+                  </a>
+                ) : (
+                  <a href={experience.url} target="_blank">
+                    <Experience exp={experience} />
+                  </a>
+                )}
               </li>
             </div>
           ))}
@@ -48,7 +49,7 @@ const Experiences = ({
 
 const Experience = ({ exp }: ExperienceProps) => {
   return (
-    <div>
+    <div className="mb-8 exp pl-0">
       <ExperienceSmall exp={exp} />
       <ExperienceLarge exp={exp} />
     </div>
@@ -79,7 +80,7 @@ const ExperienceSmall = ({ exp }: ExperienceProps) => {
 
 const ExperienceLarge = ({ exp }: ExperienceProps) => {
   return (
-    <div className="hidden lg:flex w-full gap-3 p-3">
+    <div className="hidden lg:flex w-full gap-3 p-3 hover-element">
       <div className="w-1/4">
         <div className="opacity-50 text-lg">{exp.date}</div>
       </div>

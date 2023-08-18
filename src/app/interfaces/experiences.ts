@@ -11,4 +11,5 @@ export interface ExperienceInterface {
   url: string;
   description: string;
   skills: string[];
+  samePage: boolean;
 }
