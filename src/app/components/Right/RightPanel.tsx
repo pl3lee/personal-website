@@ -6,7 +6,8 @@ import Projects from "./Projects";
 
 const getInfo = async () => {
   const response = await fetch(
-    "https://json-bucket.vercel.app/public-api/bucket?bucketID=18ae571d-d098-4676-854a-dd334888a11c"
+    "https://json-bucket.vercel.app/public-api/bucket?bucketID=18ae571d-d098-4676-854a-dd334888a11c",
+    { next: { revalidate: 0 } }
   );
   const data = await response.json();
   return data;
