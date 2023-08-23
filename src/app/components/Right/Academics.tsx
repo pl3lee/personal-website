@@ -72,10 +72,12 @@ const AcademicLarge = ({ acd }: AcademicProps) => {
         <h2 className="opacity-50 text-lg">{acd.description}</h2>
         <div className="opacity-50 text-lg">{acd.location}</div>
         <div className="opacity-50 text-lg">{acd.date}</div>
-        <div className="opacity-50 text-base">Major: {acd.major}</div>
-        <div className="opacity-50 text-base">Minor: {acd.minor}</div>
-        <div className="opacity-50 text-base">Cumulative GPA: {acd.cgpa}</div>
-        <div className="opacity-50 text-base">Major Average: {acd.mav}</div>
+        <ul className="list-disc pl-5 opacity-50 text-base">
+          <li>Double Major in {acd.major}</li>
+          <li>Minor in {acd.minor}</li>
+          <li>Cumulative GPA: {acd.cgpa}</li>
+          <li>Major Average: {acd.mav}</li>
+        </ul>
       </div>
     </div>
   );
