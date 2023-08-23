@@ -7,7 +7,7 @@ interface AcademicProps {
 
 const Academics = ({ academics }: { academics: AcademicInterface[] }) => {
   return (
-    <div className="flex flex-col w-full section" id="academics">
+    <section className="flex flex-col w-full section" id="academics">
       <SmallSectionTitle title="Academics" />
       <ul className="pl-0">
         {academics.map((academic: AcademicInterface, index: number) => (
@@ -20,7 +20,7 @@ const Academics = ({ academics }: { academics: AcademicInterface[] }) => {
           </div>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 
@@ -37,7 +37,7 @@ const AcademicSmall = ({ acd }: AcademicProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="opacity-50 text-base">{acd.date}</div>
-      <div className="text-xl font-bold">{acd.name}</div>
+      <h2 className="text-xl font-bold">{acd.name}</h2>
       <div className="opacity-50 text-base">{acd.description}</div>
       <div className="opacity-50 text-base">{acd.location}</div>
       <div className="opacity-50 text-base">Major: {acd.major}</div>
@@ -69,7 +69,7 @@ const AcademicLarge = ({ acd }: AcademicProps) => {
       </div>
       <div className="w-3/4 flex flex-col">
         <div className="text-xl font-bold">{acd.name}</div>
-        <div className="opacity-50 text-lg">{acd.description}</div>
+        <h2 className="opacity-50 text-lg">{acd.description}</h2>
         <div className="opacity-50 text-lg">{acd.location}</div>
         <div className="opacity-50 text-lg">{acd.date}</div>
         <div className="opacity-50 text-base">Major: {acd.major}</div>

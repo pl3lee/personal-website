@@ -4,7 +4,7 @@ import Project from "../Project";
 
 const Projects = ({ projects }: { projects: ProjectInterface[] }) => {
   return (
-    <div id="projects" className="section">
+    <section id="projects" className="section">
       <SmallSectionTitle title="Projects" />
       <ul className="pl-0">
         {projects.map((project: ProjectInterface, index: number) => (
@@ -15,7 +15,7 @@ const Projects = ({ projects }: { projects: ProjectInterface[] }) => {
           </div>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

@@ -15,7 +15,7 @@ const Experiences = ({
     return <div></div>;
   } else {
     return (
-      <div id="experiences" className="section">
+      <section id="experiences" className="section">
         <SmallSectionTitle title="Experiences" />
         <ul className="list-none pl-0">
           {experiences.map((experience: ExperienceInterface, index: number) => (
@@ -39,7 +39,7 @@ const Experiences = ({
             View my Résumé
           </a>
         </div>
-      </div>
+      </section>
     );
   }
 };
@@ -57,7 +57,7 @@ const ExperienceSmall = ({ exp }: ExperienceProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
       <div className="opacity-50 text-lg">{exp.date}</div>
-      <div className="text-xl font-bold">{exp.position}</div>
+      <h2 className="text-xl font-bold">{exp.position}</h2>
 
       <div className="opacity-50 text-lg">{exp.company}</div>
       <div className="opacity-50 text-lg">{exp.location}</div>
@@ -82,7 +82,7 @@ const ExperienceLarge = ({ exp }: ExperienceProps) => {
         <div className="opacity-50 text-lg">{exp.date}</div>
       </div>
       <div className="w-3/4 flex flex-col">
-        <div className="text-xl font-bold">{exp.position}</div>
+        <h2 className="text-xl font-bold">{exp.position}</h2>
         <div className="opacity-50 text-lg">{exp.company}</div>
         <div className="opacity-50 text-lg">{exp.location}</div>
         <div className="opacity-50 text-sm">{exp.description}</div>

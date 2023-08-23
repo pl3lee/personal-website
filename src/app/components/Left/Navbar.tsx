@@ -100,7 +100,7 @@ const NavLink = ({
         (activeSection === sectionClassName ? " active-section" : "")
       }
     >
-      <h1 className="flex flex-row gap-4 items-center">
+      <div className="flex flex-row gap-4 items-center">
         <AiOutlineRight
           className={`${
             activeSection === sectionClassName ? "opacity-100" : "opacity-0"
@@ -111,7 +111,7 @@ const NavLink = ({
           } transition-all duration-500`}
         />
         {sectionTitle}
-      </h1>
+      </div>
     </Link>
   );
 };

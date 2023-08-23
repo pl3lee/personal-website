@@ -4,7 +4,7 @@ import Project from "../Project";
 
 const FreelanceProjects = ({ projects }: { projects: ProjectInterface[] }) => {
   return (
-    <div id="freelance-projects" className="section">
+    <section id="freelance-projects" className="section">
       <SmallSectionTitle title="Freelance Projects" />
       <ul className="pl-0">
         {projects.map((project: ProjectInterface, index: number) => (
@@ -15,7 +15,7 @@ const FreelanceProjects = ({ projects }: { projects: ProjectInterface[] }) => {
           </div>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

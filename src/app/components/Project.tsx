@@ -24,7 +24,7 @@ const ProjectSmall = ({ proj }: ProjectProps) => {
           className="object-cover w-auto max-h-[500px]"
         />
       ) : null}
-      <div className="text-xl font-bold">{proj.name}</div>
+      <h2 className="text-xl font-bold">{proj.name}</h2>
       <div className="flex gap-3">
         {proj.demoUrl != "" ? (
           <PillLink text="Demo" link={proj.demoUrl} />
@@ -59,7 +59,7 @@ const ProjectLarge = ({ proj }: ProjectProps) => {
       </div>
       <div className="w-3/4 flex flex-col gap-2">
         <div className="flex justify-between">
-          <span className="text-xl font-bold">{proj.name} </span>
+          <h2 className="text-xl font-bold">{proj.name} </h2>
           <div className="flex gap-3">
             {proj.demoUrl != "" ? (
               <PillLink text="Demo" link={proj.demoUrl} />
