@@ -21,7 +21,7 @@ const ProjectSmall = ({ proj }: ProjectProps) => {
         <img
           src={proj.img}
           alt={proj.name}
-          className="object-cover w-auto max-h-[500px]"
+          className="object-cover w-full max-h-[400px] max-w-screen-sm"
         />
       ) : null}
       <h2 className="text-xl font-bold">{proj.name}</h2>
