@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
-    "Billy Lee - Software and Web Developer Portfolio | University of Waterloo Student",
+    "Billy Lee - Software and Web Developer | University of Waterloo Student",
   description:
-    "Discover the portfolio of Billy Lee, a talented software and web developer and student at the University of Waterloo. Explore his projects and learn more about his experience in creating innovative solutions.",
+    "Hi! I'm Billy Lee, a Math student at the University of Waterloo.",
 };
 
 export default function RootLayout({
