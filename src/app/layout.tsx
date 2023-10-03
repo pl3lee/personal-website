@@ -10,6 +10,30 @@ export const metadata: Metadata = {
     "Billy Lee - Software and Web Developer | University of Waterloo Student",
   description:
     "Hi! I'm Billy Lee, a Math student at the University of Waterloo.",
+  keywords: [
+    "Billy Lee",
+    "Billy",
+    "Lee",
+    "Software",
+    "Web",
+    "Developer",
+    "University",
+    "Waterloo",
+    "Student",
+    "Math",
+    "Mathematics",
+    "Computer",
+    "Science",
+    "Computer Science",
+    "Uwaterloo",
+    "UW",
+    "UW Student",
+    "UW Math",
+    "UW Math Student",
+    "UWaterloo",
+    "uwaterloo",
+    "uw",
+  ],
 };
 
 export default function RootLayout({
