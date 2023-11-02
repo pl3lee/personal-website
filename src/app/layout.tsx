@@ -43,6 +43,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <header>
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+      </header>
       <body className={inter.className}>
         {children}
         <Analytics />
