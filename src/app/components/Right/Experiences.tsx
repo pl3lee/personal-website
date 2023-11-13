@@ -59,7 +59,6 @@ const ExperienceSmall = ({ exp }: ExperienceProps) => {
       <div className="opacity-50 text-lg">
         {exp.date2 ? `${exp.date2}, ` : null} {exp.date}
       </div>
-      {/* {exp.date2 ? <div className="opacity-50 text-lg"></div> : null} */}
       <h2 className="text-xl font-bold">{exp.position}</h2>
 
       <div className="opacity-50 text-lg">{exp.company}</div>
