@@ -56,7 +56,10 @@ const Experience = ({ exp }: ExperienceProps) => {
 const ExperienceSmall = ({ exp }: ExperienceProps) => {
   return (
     <div className="lg:hidden flex flex-col w-full gap-3">
-      <div className="opacity-50 text-lg">{exp.date}</div>
+      <div className="opacity-50 text-lg">
+        {exp.date2 ? `${exp.date2}, ` : null} {exp.date}
+      </div>
+      {/* {exp.date2 ? <div className="opacity-50 text-lg"></div> : null} */}
       <h2 className="text-xl font-bold">{exp.position}</h2>
 
       <div className="opacity-50 text-lg">{exp.company}</div>
@@ -78,12 +81,17 @@ const ExperienceSmall = ({ exp }: ExperienceProps) => {
 const ExperienceLarge = ({ exp }: ExperienceProps) => {
   return (
     <div className="hidden lg:flex w-full gap-3 p-3 hover-element">
-      <div className="w-1/4">
-        <div className="opacity-50 text-lg">{exp.date}</div>
+      <div className="w-1/4 flex flex-col">
+        <div className="opacity-50 text-sm">{exp.date}</div>
+        {exp.date2 ? (
+          <div className="opacity-50 text-sm">{exp.date2}</div>
+        ) : null}
       </div>
       <div className="w-3/4 flex flex-col">
-        <h2 className="text-xl font-bold">{exp.position}</h2>
-        <div className="opacity-50 text-lg">{exp.company}</div>
+        <h2 className="text-lg font-bold">{exp.position}</h2>
+        <div className="opacity-50 text-lg">
+          {exp.company === "NA" ? "" : exp.company}
+        </div>
         <div className="opacity-50 text-lg">{exp.location}</div>
         <div className="opacity-50 text-sm">{exp.description}</div>
         <ul className="flex items-center flex-wrap">

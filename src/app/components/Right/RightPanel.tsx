@@ -17,8 +17,8 @@ const RightPanel = async () => {
   const info = await getInfo();
   console.log(info);
   return (
-    <div className="flex flex-col text-left lg:pt-[6rem] lg:pb-[6rem] lg:w-1/2 lg:ml-10 lg:gap-72 w-full gap-16">
-      <About />
+    <div className="flex flex-col text-left lg:pt-[6rem] lg:pb-[6rem] lg:w-2/3 lg:gap-72 w-full gap-16">
+      <About about={info.about} />
       <Experiences experiences={info.experiences} />
       <FreelanceProjects projects={info.freelanceProjects} />
       <Projects projects={info.projects} />
