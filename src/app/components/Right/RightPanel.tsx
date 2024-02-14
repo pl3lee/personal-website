@@ -3,19 +3,14 @@ import Academics from "./Academics";
 import Experiences from "./Experiences";
 import FreelanceProjects from "./FreelanceProjects";
 import Projects from "./Projects";
+import info from "@/app/info.json"
 
 const getInfo = async () => {
-  const response = await fetch(
-    "https://json-bucket.vercel.app/public-api/bucket?bucketID=18ae571d-d098-4676-854a-dd334888a11c",
-    { next: { revalidate: 0 } }
-  );
-  const data = await response.json();
-  return data;
+  return info;
 };
 
 const RightPanel = async () => {
   const info = await getInfo();
-  console.log(info);
   return (
     <div className="flex flex-col text-left lg:pt-[6rem] lg:pb-[6rem] lg:w-2/3 lg:gap-72 w-full gap-16">
       <About about={info.about} />

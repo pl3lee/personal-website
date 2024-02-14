@@ -7,7 +7,7 @@ const FreelanceProjects = ({ projects }: { projects: ProjectInterface[] }) => {
     <section id="freelance-projects" className="section">
       <SmallSectionTitle title="Freelance Projects" />
       <ul className="pl-0">
-        {projects.map((project: ProjectInterface, index: number) => (
+        {projects?.map((project: ProjectInterface, index: number) => (
           <div key={index}>
             <li>
               <Project proj={project} />

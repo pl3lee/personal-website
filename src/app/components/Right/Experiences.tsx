@@ -18,7 +18,7 @@ const Experiences = ({
       <section id="experiences" className="section">
         <SmallSectionTitle title="Experiences" />
         <ul className="list-none pl-0">
-          {experiences.map((experience: ExperienceInterface, index: number) => (
+          {experiences?.map((experience: ExperienceInterface, index: number) => (
             <div key={experience.company}>
               <li className="">
                 {experience.samePage ? (

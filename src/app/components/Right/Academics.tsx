@@ -10,7 +10,7 @@ const Academics = ({ academics }: { academics: AcademicInterface[] }) => {
     <section className="flex flex-col w-full section" id="academics">
       <SmallSectionTitle title="Academics" />
       <ul className="pl-0">
-        {academics.map((academic: AcademicInterface, index: number) => (
+        {academics?.map((academic: AcademicInterface, index: number) => (
           <div key={index}>
             <li>
               <a href={academic.url} target="_blank">
