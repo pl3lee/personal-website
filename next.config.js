@@ -6,6 +6,7 @@ const nextConfig = {
       "github-production-user-asset-6210df.s3.amazonaws.com",
     ],
   },
+  output: "standalone",
 };
 
 module.exports = nextConfig;
