@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/personal-website:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/personal-website:${{ github.sha }}
       
   deploy:
     needs: build_and_push
