@@ -1,5 +1,5 @@
 {
-    "about": "Hi there! I’m a fourth-year Mathematics student at the University of Waterloo, with a double major in Computational Mathematics and Combinatorics & Optimization and a minor in Computer Science. I am currently working at the University of Waterloo as a Full Stack Developer while I study. I am proficient in multiple programming languages and web development technologies/frameworks. In my free time, I enjoy playing badminton, video games, and chess (though I’m still working on improving my skills!). I am excited to continue learning and growing in my field.",
+    "about": "Hi there! I’m a fourth-year Mathematics student at the University of Waterloo, with a double major in Computational Mathematics and Combinatorics & Optimization and a minor in Computer Science. I am proficient in multiple programming languages and web development technologies/frameworks. In my free time, I enjoy playing badminton, video games, and rock climbing. I am excited to continue learning and growing in my field.",
     "projects": [
       {
         "name": "Instagram Clone",
@@ -79,14 +79,24 @@
     ],
     "experiences": [
       {
-        "position": "Full Stack Developer Intern",
+        "position": "Lead Developer/DevOps Engineer",
         "company": "University of Waterloo",
         "location": "Waterloo, Ontario, Canada",
-        "date": "Sept 2023 - Current",
+        "date": "Jan - May 2024",
+        "url": "https://uwaterloo.ca/",
+        "samePage": false,
+        "description": "Developed a Next.js-based web platform for a figures of speech research group, enabling user submissions and annotations of figure instances. As a lead developer, I hosted weekly standup meetings, conducted code reviews for merge requests, and set up a documentation site with a CD pipeline to ensure proper project documentation. I also revamped the CI/CD process using GitLab pipelines, Docker, and Docker compose, automating and accelerating testing, building, and deployment phases.",
+        "skills": ["NextJS", "TypeScript", "Docker", "GitLab CI/CD"]
+      },
+      {
+        "position": "Full Stack Developer",
+        "company": "University of Waterloo",
+        "location": "Waterloo, Ontario, Canada",
+        "date": "Sept - Dec 2023",
         "date2": "Jan - Apr 2023",
         "url": "https://uwaterloo.ca/",
         "samePage": false,
-        "description": "Contributed to the development of a cognitive linguistic research group’s website at the University of Waterloo. I worked on both the frontend, using Next.js and TypeScript, and the backend, using Golang. I created responsive and intuitive interfaces using NextJS and Material UI. To ensure optimal website performance and maintain high code quality, I utilized Jest and GitLab pipeline for testing and linting. I also streamlined development processes by transitioning the front-end framework from Ant Design to Material-UI. Additionally, I created a backend endpoint that dissociates an instance with a figure.",
+        "description": "I worked on both the frontend, using Next.js and TypeScript, and the backend, using Golang. I spearheaded the implementation of advanced features including rich text support and dynamic highlighting functionality for annotations.",
         "skills": ["NextJS", "TypeScript", "Golang", "MaterialUI", "GitLab", "Jest"]
       },
       {
@@ -100,7 +110,7 @@
         "skills": ["Next.js", "TailwindCSS"]
       },
       {
-        "position": "Presales Intern",
+        "position": "Software Developer Intern",
         "company": "Hewlett Packard Enterprise",
         "location": "Hong Kong SAR, China",
         "date": "Jun - Aug 2023",
@@ -110,7 +120,7 @@
         "skills": ["React.js", "Apache", "HPE GreenLake", "VMWare vSphere", "Python", "Bash", "PowerShell"]
       },
       {
-        "position": "Computer Technician Intern",
+        "position": "Software Developer Intern",
         "company": "Bolee Machine Tool Ltd.",
         "location": "Hong Kong SAR, China",
         "date": "Apr - Jun 2023",
@@ -138,8 +148,8 @@
         "date": "Sep 2020 - Aug 2024",
         "major": "Computational Mathematics and Combinatorics & Optimization",
         "minor": "Computer Science",
-        "cgpa": "89.83/100",
-        "mav": "88.10/100",
+        "cgpa": "88.56/100",
+        "mav": "86.81/100",
         "url": "https://uwaterloo.ca/",
         "img": "https://user-images.githubusercontent.com/64212628/245346483-e3a2287d-50de-45f2-8261-058488ca99ef.png"
       }

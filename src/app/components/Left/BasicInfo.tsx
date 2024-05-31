@@ -6,8 +6,7 @@ const BasicInfo = () => {
         4th Year Mathematics Student at the University of Waterloo
       </h2>
       <h3 className="text-sm lg:text-1xl opacity-50">
-        Honours Mathematics Student with Experience in Web Development and
-        Python/C++ Programming
+        Honours Mathematics Student with Experience in Web Development
       </h3>
     </section>
   );
