@@ -45,7 +45,7 @@ jobs:
     - name: Deploy to DigitalOcean Droplet
       run: |
         ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }} << 'EOF'
-          cd /root/personal-website
+          cd /root/hosting/personal-website
           echo IMAGE_TAG=${{ secrets.DOCKER_USERNAME }}/personal-website:${{ github.sha }} > .env
           docker compose pull
           docker compose up -d
